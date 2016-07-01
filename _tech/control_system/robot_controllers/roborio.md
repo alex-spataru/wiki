@@ -61,11 +61,11 @@ The power LED has five states, off, green, red solid, red flashing, and yellow. 
 
 If the power LED is flashing red, the input voltage is too high, over 16 V, and all outputs have been disabled. This includes the RSL. If the power LED is solid yellow, one of the brownout conditions have been detected, see the section below on more info on brownouts.
 
-| Color                          | Meaning                                       |
-| ------------------------------ | --------------------------------------------- |
-| <font color=green>Green</font> | Power is good                                 |
-| <font color=amber>Amber</font> | Brownout protection tripped, outputs disabled |
-| <font color=red>Red</font>     | Power fault                                   |
+| Color | Meaning                                       |
+| ------| --------------------------------------------- |
+| Green | Power is good                                 |
+| Amber | Brownout protection tripped, outputs disabled |
+| Red   | Power fault                                   |
 
 #### Status LED
 
@@ -93,23 +93,23 @@ The communications LED states the current status of the communication with the d
 
 If the LED is flashing red, the robot has been E-Stopped by the driver station. If this happens, all outputs are immediately disconnected, and you must hard reset the roboRIO, either by pressing the reset button, or cycling power to the entire robot, to regain communications. If the LED is green, the driver station has communication and the communication protocol is active. Yellow is listed as "reserved" in the manual.
 
-| Code                                 | Meaning                                      |
-| ------------------------------------ | -------------------------------------------- |
-| Off                                  | No communication                             |
-| <font color=red>Red</font> solid     | Communication with DS, no user code          |
-| <font color=green>Green</font> solid | Good communication with DS, user code loaded |
-| <font color=red>Red</font> blinking  | Emergency stop                               |
+| Code                 | Meaning                                      |
+| ---------------------| -------------------------------------------- |
+| Off                  | No communication                             |
+| Red (not blinking)   | Communication with DS, no user code          |
+| Green (not blinking) | Good communication with DS, user code loaded |
+| Red (blinking)       | Emergency stop                               |
 
 #### Mode LED
 
 The mode LED states what game state the game is currently in, such as [Autonomous Mode](autonomous-mode) or TeleOperated mode. This can also be controlled by the driver station when not connected to the [FMS](FMS) and a full field. A off LED means that the robot is either in the disabled state, or is disconnected from the driver station or FMS. A green LED means the robot is in Autonomous Mode. A yellow LED means the robot is in TeleOperated mode. A red LED means the roboRIO is unsure of what state it's in, or is in test mode.
 
-| Color                            | Meaning            |
-| -------------------------------- | ------------------ |
-| Off                              | Outputs disabled   |
-| <font color=orange>Orange</font> | Autonomous enabled |
-| <font color=green>Green</font>   | TeleOP enabled     |
-| <font color=red>Red</font>       | Test enabled       |
+| Color  | Meaning            |
+| -------| ------------------ |
+| Off    | Outputs disabled   |
+| Orange | Autonomous enabled |
+| Green  | TeleOP enabled     |
+| Red    | Test enabled       |
 
 #### RSL LED
 
